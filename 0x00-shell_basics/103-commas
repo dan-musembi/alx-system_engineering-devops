@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -a | grep -v '^\.+$' | sed 's/$/,/' | sed 's/^/"/' | sed 's/\/",$/\/"/' | LC_COLLATE=C sort -d | sed 's/, /,/g' | tr -d '\n' && echo
-
+ls -amvp
